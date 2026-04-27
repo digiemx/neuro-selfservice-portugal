@@ -11,12 +11,12 @@ const FAQS = [
     a: "Sí, se solicita tarjeta de crédito para activar la prueba. Si cancelas antes de que finalicen los 7 días, no se realizará ningún cargo.",
   },
   {
-    q: "¿Puedo trabajar con mis pacientes reales durante la prueba?",
+    q: "¿Puedo trabajar con mis usuarios reales durante la prueba?",
     a: "Sí. Puedes crear perfiles de usuarios, asignarles sesiones y hacer seguimiento de sus resultados desde el primer día.",
   },
   {
-    q: "¿Puedo enviar sesiones a mis pacientes para que trabajen desde casa?",
-    a: "Sí. NeuronUP2GO te permite asignar sesiones de telerrehabilitación para que tus pacientes trabajen en remoto durante tu periodo de prueba.",
+    q: "¿Puedo enviar sesiones a mis usuarios para que trabajen en remoto?",
+    a: "Sí. NeuronUP2GO te permite asignar sesiones de telerrehabilitación para que tus usuarios trabajen en remoto durante tu periodo de prueba.",
   },
   {
     q: "¿Qué pasa cuando termina la prueba?",
