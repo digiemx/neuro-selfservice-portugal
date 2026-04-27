@@ -12,8 +12,8 @@ import {
   Youtube,
   Instagram,
   Facebook,
-  Brain,
 } from "lucide-react";
+import logoNeuronup from "@/assets/logo-neuronup.svg";
 import { Navbar } from "@/components/site/Navbar";
 import { Faq } from "@/components/site/Faq";
 import { useReveal } from "@/hooks/use-reveal";
@@ -440,9 +440,8 @@ function Index() {
       <footer style={{ backgroundColor: "var(--color-ink)" }} className="text-white py-14 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <Brain size={26} className="text-white" />
-              <span className="text-xl font-bold">NeuronUP</span>
+            <div className="mb-2">
+              <img src={logoNeuronup} alt="NeuronUP" className="h-8 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/60 text-sm">Rehabilitación Cognitiva Profesional</p>
           </div>
