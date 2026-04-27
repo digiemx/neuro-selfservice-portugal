@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Brain } from "lucide-react";
+import logoNeuronup from "@/assets/logo-neuronup.svg";
 
 const TRIAL_URL = "https://app.neuronup.com/public/trial/request/adults_kids/monthly";
 
@@ -22,9 +22,8 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <Brain className="text-primary" size={26} strokeWidth={2.2} />
-          <span className="text-primary font-bold text-xl tracking-tight">NeuronUP</span>
+        <a href="#" className="flex items-center">
+          <img src={logoNeuronup} alt="NeuronUP" className="h-8 w-auto" />
         </a>
         <nav className="flex items-center gap-3 sm:gap-6">
           <a
