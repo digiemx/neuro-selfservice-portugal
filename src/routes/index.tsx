@@ -239,25 +239,6 @@ function Index() {
         </div>
       </section>
 
-      {/* CLIENT LOGOS STRIP */}
-      <section className="py-14 px-6 bg-white border-y border-border">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-center text-xs uppercase tracking-wider mb-8 font-medium opacity-60">
-            Centros, hospitales y asociaciones que confían en NeuronUP
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-            {CLIENT_LOGOS.map((l) => (
-              <img
-                key={l.alt}
-                src={l.src}
-                alt={l.alt}
-                loading="lazy"
-                className="h-16 sm:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FEATURES */}
       <section className="py-24 px-6 bg-white">
