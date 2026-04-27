@@ -23,7 +23,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src={logoNeuronup} alt="NeuronUP" className="h-8 w-auto" />
+          <img src={logoNeuronup} alt="NeuronUP" className="h-12 w-auto" />
         </a>
         <nav className="flex items-center gap-3 sm:gap-6">
           <a

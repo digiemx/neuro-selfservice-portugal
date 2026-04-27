@@ -441,7 +441,7 @@ function Index() {
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
           <div>
             <div className="mb-2">
-              <img src={logoNeuronup} alt="NeuronUP" className="h-8 w-auto brightness-0 invert" />
+              <img src={logoNeuronup} alt="NeuronUP" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-white/60 text-sm">Rehabilitación Cognitiva Profesional</p>
           </div>
