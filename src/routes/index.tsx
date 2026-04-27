@@ -177,7 +177,7 @@ function Index() {
       <section className="pt-28 pb-20 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
           <div className="reveal">
-            <span className="pill mb-6">✓ +4.500 profesionales ya confían en NeuronUP</span>
+            <span className="pill mb-6">+4.500 profesionales ya confían en NeuronUP</span>
             <h1 className="mb-6">
               La plataforma que <span className="underline-brand">transforma</span> cómo intervienes
               con tus usuarios
@@ -446,10 +446,10 @@ function Index() {
             <p className="text-white/60 text-sm">Rehabilitación Cognitiva Profesional</p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/60">
-            <a href="#" className="hover:text-white transition-colors">Política de privacidad</a>
-            <a href="#" className="hover:text-white transition-colors">Aviso legal</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
-            <a href="#" className="hover:text-white transition-colors">Condiciones de servicio</a>
+            <a href="https://neuronup.com/aviso-legal/#politicaprivacidad" className="hover:text-white transition-colors">Política de privacidad</a>
+            <a href="https://neuronup.com/aviso-legal/" className="hover:text-white transition-colors">Aviso legal</a>
+            <a href="#" className="hover:text-white transition-colors">{"\n"}</a>
+            <a href="#" className="hover:text-white transition-colors">{"\n"}</a>
           </div>
           <div className="flex md:justify-end gap-4">
             <a href="#" aria-label="LinkedIn" className="text-white hover:text-primary transition-colors">
