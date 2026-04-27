@@ -438,18 +438,15 @@ function Index() {
 
       {/* FOOTER */}
       <footer style={{ backgroundColor: "var(--color-ink)" }} className="text-white py-14 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
-          <div>
-            <div className="mb-2">
-              <img src={logoNeuronup} alt="NeuronUP" className="h-12 w-auto brightness-0 invert" />
-            </div>
-            <p className="text-white/60 text-sm">Rehabilitación Cognitiva Profesional</p>
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="flex items-center">
+            <img src={logoNeuronup} alt="NeuronUP" className="h-10 w-auto brightness-0 invert" />
           </div>
-          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/60">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/60">
             <a href="https://neuronup.com/aviso-legal/#politicaprivacidad" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Política de privacidad</a>
             <a href="https://neuronup.com/aviso-legal/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Aviso legal</a>
           </div>
-          <div className="flex md:justify-end gap-4">
+          <div className="flex items-center gap-5">
             <a href="https://www.linkedin.com/company/neuronup/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-primary transition-colors">
               <Linkedin size={20} />
             </a>
@@ -464,7 +461,7 @@ function Index() {
             </a>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 text-sm text-white/50">
+        <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/10 text-sm text-white/50 text-center md:text-left">
           © 2026 NeuronUP
         </div>
       </footer>
