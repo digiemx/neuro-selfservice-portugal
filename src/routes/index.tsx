@@ -12,8 +12,8 @@ import {
   Youtube,
   Instagram,
   Facebook,
-  Brain,
 } from "lucide-react";
+import logoNeuronup from "@/assets/logo-neuronup.svg";
 import { Navbar } from "@/components/site/Navbar";
 import { Faq } from "@/components/site/Faq";
 import { useReveal } from "@/hooks/use-reveal";
