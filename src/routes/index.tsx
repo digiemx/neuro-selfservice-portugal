@@ -446,22 +446,20 @@ function Index() {
             <p className="text-white/60 text-sm">Rehabilitación Cognitiva Profesional</p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/60">
-            <a href="https://neuronup.com/aviso-legal/#politicaprivacidad" className="hover:text-white transition-colors">Política de privacidad</a>
-            <a href="https://neuronup.com/aviso-legal/" className="hover:text-white transition-colors">Aviso legal</a>
-            <a href="#" className="hover:text-white transition-colors">{"\n"}</a>
-            <a href="#" className="hover:text-white transition-colors">{"\n"}</a>
+            <a href="https://neuronup.com/aviso-legal/#politicaprivacidad" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Política de privacidad</a>
+            <a href="https://neuronup.com/aviso-legal/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Aviso legal</a>
           </div>
           <div className="flex md:justify-end gap-4">
-            <a href="#" aria-label="LinkedIn" className="text-white hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/company/neuronup/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-primary transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" aria-label="YouTube" className="text-white hover:text-primary transition-colors">
+            <a href="https://www.youtube.com/@Neuronup" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white hover:text-primary transition-colors">
               <Youtube size={20} />
             </a>
-            <a href="#" aria-label="Instagram" className="text-white hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/neuron_up/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white hover:text-primary transition-colors">
               <Instagram size={20} />
             </a>
-            <a href="#" aria-label="Facebook" className="text-white hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/NeuronUP" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white hover:text-primary transition-colors">
               <Facebook size={20} />
             </a>
           </div>
