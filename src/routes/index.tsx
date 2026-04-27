@@ -205,7 +205,7 @@ function Index() {
                     src={l.src}
                     alt={l.alt}
                     loading="lazy"
-                    className="h-9 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
+                    className="h-14 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
                   />
                 ))}
               </div>
@@ -252,7 +252,7 @@ function Index() {
                 src={l.src}
                 alt={l.alt}
                 loading="lazy"
-                className="h-10 sm:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
+                className="h-16 sm:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
               />
             ))}
           </div>
