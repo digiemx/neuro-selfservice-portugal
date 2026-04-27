@@ -18,8 +18,8 @@ import { Navbar } from "@/components/site/Navbar";
 import { Faq } from "@/components/site/Faq";
 import { useReveal } from "@/hooks/use-reveal";
 
-import heroImg from "@/assets/hero-neuropsychologist.jpg";
-import therapyImg from "@/assets/therapy-session.jpg";
+import heroImg from "@/assets/hero-replacement.png";
+import therapyImg from "@/assets/therapy-replacement.png";
 import tPaula from "@/assets/testimonial-paula.webp";
 import tGloria from "@/assets/testimonial-gloria.webp";
 import tRocio from "@/assets/testimonial-rocio.webp";
@@ -188,7 +188,7 @@ function Index() {
               neurorrehabilitación.
             </p>
             <a href={TRIAL_URL} className="btn-cta text-base sm:text-lg">
-              Empieza tu prueba gratuita de 7 días <ArrowRight size={20} />
+              Empieza tu prueba gratuita <ArrowRight size={20} />
             </a>
             <p className="mt-4 text-sm" style={{ color: "color-mix(in oklab, var(--ink) 60%, white)" }}>
               Se requiere tarjeta de crédito · Cancela antes de los 7 días y no se te cobrará nada
