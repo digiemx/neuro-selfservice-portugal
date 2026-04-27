@@ -20,9 +20,16 @@ import { useReveal } from "@/hooks/use-reveal";
 
 import heroImg from "@/assets/hero-neuropsychologist.jpg";
 import therapyImg from "@/assets/therapy-session.jpg";
-import t1 from "@/assets/testimonial-1.jpg";
-import t2 from "@/assets/testimonial-2.jpg";
-import t3 from "@/assets/testimonial-3.jpg";
+import tPaula from "@/assets/testimonial-paula.webp";
+import tGloria from "@/assets/testimonial-gloria.webp";
+import tRocio from "@/assets/testimonial-rocio.webp";
+import logoSanitas from "@/assets/logo-sanitas.webp";
+import logoFremap from "@/assets/logo-fremap.webp";
+import logoMenni from "@/assets/logo-red-menni.webp";
+import logoRuber from "@/assets/logo-ruber.webp";
+import logoAdembi from "@/assets/logo-adembi.webp";
+import logoGaliani from "@/assets/logo-galiani.webp";
+import logoAfa from "@/assets/logo-afa-alcala.webp";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -55,7 +62,7 @@ const FEATURES = [
   {
     icon: Settings2,
     title: "Personalización total",
-    desc: "Adapta cada actividad al nivel cognitivo y necesidades de tu paciente. Introduce estímulos familiares y define tu propio catálogo reutilizable.",
+    desc: "Adapta cada actividad al nivel cognitivo y necesidades de tu usuario. Introduce estímulos familiares y define tu propio catálogo reutilizable.",
   },
   {
     icon: CalendarDays,
@@ -70,26 +77,26 @@ const FEATURES = [
   {
     icon: Home,
     title: "Telerrehabilitación (NeuronUP2GO)",
-    desc: "Envía sesiones para que tus pacientes trabajen desde casa. Mantén la continuidad terapéutica sin importar la distancia.",
+    desc: "Envía sesiones para que tus usuarios trabajen en remoto. Mantén la continuidad terapéutica sin importar la distancia.",
   },
   {
     icon: FolderKanban,
     title: "Programas de intervención",
-    desc: "Planifica conjuntos de sesiones con semanas o meses de anticipación. Asígnalos a múltiples pacientes con ajuste de nivel automático e individual.",
+    desc: "Planifica conjuntos de sesiones con semanas o meses de anticipación. Asígnalos a múltiples usuarios con ajuste de nivel automático e individual.",
   },
 ];
 
 const STATS = [
   { num: "+4.500", label: "Profesionales activos" },
   { num: "+100.000", label: "Sesiones realizadas" },
-  { num: "+8 países", label: "LATAM y Europa" },
-  { num: "7 años", label: "de desarrollo continuo" },
+  { num: "+75 países", label: "donde se utiliza NeuronUP" },
+  { num: "+15 años", label: "desarrollando neurorrehabilitación digital" },
 ];
 
 const STEPS = [
   {
     n: "1",
-    title: "Crea el perfil de tu paciente",
+    title: "Crea el perfil de tu usuario",
     desc: "Registra su nombre, diagnóstico e historial clínico. La plataforma configura automáticamente los niveles adecuados para cada caso.",
   },
   {
@@ -123,30 +130,35 @@ const PROFILES = [
   "Psicólogos clínicos",
   "Terapeutas ocupacionales",
   "Logopedas y fonoaudiólogos",
-  "Centros de neurorrehabilitación",
-  "Residencias",
-  "Hospitales",
-  "Asociaciones",
-  "Colegios y universidades",
+];
+
+const CLIENT_LOGOS = [
+  { src: logoSanitas, alt: "Sanitas" },
+  { src: logoFremap, alt: "Fremap" },
+  { src: logoMenni, alt: "Red Menni" },
+  { src: logoRuber, alt: "Ruber Internacional" },
+  { src: logoAdembi, alt: "ADEMBI" },
+  { src: logoGaliani, alt: "Galiani" },
+  { src: logoAfa, alt: "AFA Alcalá" },
 ];
 
 const TESTIMONIALS = [
   {
-    img: t1,
+    img: tPaula,
     name: "Paula Rodríguez",
     role: "Neuropsicóloga",
     quote:
       "Llevo más de dos años utilizando NeuronUP en la asociación de daño cerebral y los usuarios están muy contentos de trabajar con las actividades de la plataforma.",
   },
   {
-    img: t2,
+    img: tGloria,
     name: "Gloria Cano",
     role: "Neuropsicóloga",
     quote:
       "Me parece una plataforma que todo psicólogo y neuropsicólogo debe tener. Te proporciona el material necesario para trabajar de manera cómoda y sencilla la estimulación cognitiva de forma presencial y desde casa.",
   },
   {
-    img: t3,
+    img: tRocio,
     name: "Rocío Mendoza",
     role: "Neuropsicóloga",
     quote:
@@ -168,7 +180,7 @@ function Index() {
             <span className="pill mb-6">✓ +4.500 profesionales ya confían en NeuronUP</span>
             <h1 className="mb-6">
               La plataforma que <span className="underline-brand">transforma</span> cómo intervienes
-              con tus pacientes
+              con tus usuarios
             </h1>
             <p className="text-lg sm:text-xl mb-8 max-w-xl">
               Planifica sesiones, personaliza ejercicios, trabaja en remoto y demuestra resultados
@@ -183,17 +195,19 @@ function Index() {
             </p>
 
             <div className="mt-12 pt-8 border-t border-border">
-              <p className="text-xs uppercase tracking-wider mb-3 font-medium opacity-60">
+              <p className="text-xs uppercase tracking-wider mb-5 font-medium opacity-60">
                 Utilizado en centros como
               </p>
-              <div className="flex flex-wrap gap-x-8 gap-y-2 opacity-50 font-bold text-ink">
-                <span>Sanitas</span>
-                <span>·</span>
-                <span>Fremap</span>
-                <span>·</span>
-                <span>Red Menni</span>
-                <span>·</span>
-                <span>Ruber Internacional</span>
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                {CLIENT_LOGOS.slice(0, 4).map((l) => (
+                  <img
+                    key={l.alt}
+                    src={l.src}
+                    alt={l.alt}
+                    loading="lazy"
+                    className="h-9 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -225,11 +239,31 @@ function Index() {
         </div>
       </section>
 
+      {/* CLIENT LOGOS STRIP */}
+      <section className="py-14 px-6 bg-white border-y border-border">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-center text-xs uppercase tracking-wider mb-8 font-medium opacity-60">
+            Centros, hospitales y asociaciones que confían en NeuronUP
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+            {CLIENT_LOGOS.map((l) => (
+              <img
+                key={l.alt}
+                src={l.src}
+                alt={l.alt}
+                loading="lazy"
+                className="h-10 sm:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity grayscale"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FEATURES */}
       <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-14 reveal">
-            <h2 className="mb-5">Acceso completo a todo esto durante 7 días</h2>
+            <h2 className="mb-5">Acceso completo a todas las funcionalidades durante 7 días</h2>
             <p className="text-lg">
               Desde el primer día tendrás disponibles todas las herramientas de intervención y
               seguimiento. Sin limitaciones, sin tutoriales obligatorios. Solo entra y empieza.
@@ -322,7 +356,7 @@ function Index() {
           <div className="reveal">
             <img
               src={therapyImg}
-              alt="Terapeuta latinoamericana trabajando con paciente adulto mayor en una sesión de rehabilitación cognitiva"
+              alt="Terapeuta latinoamericana trabajando con un usuario adulto mayor en una sesión de rehabilitación cognitiva"
               width={1280}
               height={1280}
               loading="lazy"
@@ -345,9 +379,9 @@ function Index() {
             </div>
 
             <p className="text-base">
-              <strong style={{ color: "var(--color-ink)" }}>Ideal para intervenir con:</strong> Daño
-              cerebral adquirido · Alzheimer y otras demencias · Discapacidad intelectual · TDAH y
-              trastornos del neurodesarrollo · Enfermedad mental · Envejecimiento normal
+              <strong style={{ color: "var(--color-ink)" }}>Ideal para trabajar con personas con:</strong>{" "}
+              Daño cerebral adquirido · Alzheimer y otras demencias · Discapacidad intelectual ·
+              TDAH y trastornos del neurodesarrollo · Enfermedad mental · Envejecimiento normal
             </p>
           </div>
         </div>
@@ -375,8 +409,6 @@ function Index() {
                   <img
                     src={t.img}
                     alt={t.name}
-                    width={512}
-                    height={512}
                     loading="lazy"
                     className="w-12 h-12 rounded-full object-cover"
                   />
