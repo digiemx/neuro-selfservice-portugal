@@ -391,7 +391,7 @@ function Index() {
                     src={t.img}
                     alt={t.name}
                     loading="lazy"
-                    className="w-12 h-12 rounded-full object-cover"
+                    className="w-20 h-20 rounded-full object-cover"
                   />
                   <div>
                     <div className="font-bold text-primary">{t.name}</div>
