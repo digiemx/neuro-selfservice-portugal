@@ -32,7 +32,7 @@ export function Navbar() {
             className="hidden sm:inline text-ink text-sm font-medium hover:text-primary transition-colors"
             style={{ color: "var(--color-ink)" }}
           >
-            Iniciar sesión
+            {"\n"}
           </a>
           <a href={TRIAL_URL} className="btn-cta !py-2.5 !px-5 !text-sm">
             Prueba gratis 7 días

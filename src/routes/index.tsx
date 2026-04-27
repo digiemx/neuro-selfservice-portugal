@@ -468,7 +468,7 @@ function Index() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/10 text-sm text-white/50">
-          © 2025 NeuronUP
+          © 2026 NeuronUP
         </div>
       </footer>
     </div>
