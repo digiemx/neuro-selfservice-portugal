@@ -297,7 +297,7 @@ function Index() {
 
           <div className="text-center mt-14 reveal">
             <a href={TRIAL_URL} className="btn-cta">
-              Quiero probarlo gratis <ArrowRight size={18} />
+              Obtener prueba gratuita <ArrowRight size={18} />
             </a>
           </div>
         </div>
